@@ -71,19 +71,53 @@
 
 #10 : prime number check 
 
-is_prime = 1 
-n = int(input("enter the number to check prime :"))
-if n ==1 :
- print("1 is not a prime number")
-elif n<1:
- print("enter a number greater than 0")
-else :
-  for i in range(2,n,1):
-     if n%i == 0:
-        is_prime = 0
-        break 
+# is_prime = 1 
+# n = int(input("enter the number to check prime :"))
+# if n ==1 :
+#  print("1 is not a prime number")
+# elif n<1:
+#  print("enter a number greater than 0")
+# else :
+#   for i in range(2,n,1):
+#      if n%i == 0:
+#         is_prime = 0
+#         break 
 
-  if is_prime == 1:
-    print("yes it's a prime number")
+#   if is_prime == 1:
+#     print("yes it's a prime number")
    
-  else : print("no , it's not a prime number")
+#   else : print("no , it's not a prime number)
+
+#11 : reverse strings without using in build function 
+# a = "Python"
+# empty_string = ""
+# for i in range(len(a)-1,-1,-1):
+#     empty_string = empty_string + a[i]
+# print(empty_string)
+
+#12 : check string is pallindrome or not 
+
+# a = input("enter your string :")
+# empty_string = ""
+# for i in range(len(a)-1,-1,-1):
+#     empty_string = empty_string + a[i]
+
+# if empty_string == a :
+#     print("yes it's a palindrome string")
+
+# else :
+#     print("no it's not a string")
+
+#13 : count all letters , digits , and special symbols from given string 
+# a = input("enter your string here :")
+# alp = 0
+# spchar = 0
+# digits = 0
+# for i in a :
+#     if i.isdigit():
+#         digits +=1
+#     elif i.isalpha():
+#         alp += 1
+#     else:
+#         spchar +=1 
+# print(f"total alphabets are {alp}\n,special characters are {spchar}\n and total digits are {digits} in {a}")
