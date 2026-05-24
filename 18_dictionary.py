@@ -12,16 +12,16 @@
 # print(d)
 
 # traversing :
-# d = {1:100 , 2: 200 , 'hello': 'hello', 5.5 : 6.5}
-# for i in d :
-#     print(d[i])
-# #or
-# for i in d.values():
-#     print(i)
 d = {1:100 , 2: 200 , 'hello': 'hello', 5.5 : 6.5}
-c = d
-c[2] = 45
-print(d) # here chnage also happened in d dictionary , therefore we use shallow copy method
-c = d.copy()
-c[2] = 46
-print(d)
+for i in d :
+    print(d[i])
+# #or
+for i in d.values():
+    print(i)
+# d = {1:100 , 2: 200 , 'hello': 'hello', 5.5 : 6.5}
+# c = d
+# c[2] = 45
+# print(d) # here chnage also happened in d dictionary , therefore we use shallow copy method
+# c = d.copy()
+# c[2] = 46
+# print(d)
