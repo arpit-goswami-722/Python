@@ -14,7 +14,7 @@
 
 # print(f"sum is {sum}")
 
-# # coutn the frequency of each elements in a list:
+# # count the frequency of each elements in a list:
 # l = [1,2,2,23,44,5,4,5,6,4,6,4,35,5]
 # d = {}
 # for i in l :
@@ -25,3 +25,11 @@
 # print(d)
 
 # Wap to combine two dictionary by adding values for common keys :
+d1 = {1:100,2:200,3:300,4:500}
+d2 = {4:400,5:500,6:600}
+for i in d2:
+    if i in d1:
+        d1[i] += d2[i]
+    else : 
+        d1[i] = d2[i]
+print(d1)
